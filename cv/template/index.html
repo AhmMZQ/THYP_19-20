@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CV - Ahmed MARZAQ</title>
+
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.css" rel="stylesheet">
+
+    <!-- Les charts -->
+    <script src="js/dimple.v2.3.0.min.js"></script>
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" style="background-color: #007bff;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Choisir un étudiant(e)  
+            </button>
+            <div id="dropDownStudents" class="dropdown-menu scrollable-menu" aria-labelledby="dropdownMenuButton" style="cursor: pointer">
+            </div>
+          </div>
+
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none"></span>
+        <span class="d-none d-lg-block">
+          <img id=profileImage class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profilAA.png" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">À propos de moi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Expériences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Formations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Compétences</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Intérêts</a>
+          </li> -->
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">
+            <span id="firstName">MARZAQ</span>
+            <span id="lastName" >Ahmed</span>
+          </h1>
+          <div class="subheading mb-5">
+            <span id="adress">4 rue bergkamen, 92230 Gennevilliers</span> .
+            <span id="phoneNumber">06.50.03.17.57</span> ·
+            <a id="mail" href="mailto:ahmd.marzaq@gmail.com">ahmd.marzaq@email.com</a>
+          </div>
+          <p class="mb-5" id="bio"></p>
+          
+          
+            <ul id="socialMedia" class="list-inline list-social-icons mb-0">
+
+            
+            <li class="list-inline-item">
+              <a id="facebook" href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a id="twitter" href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a id="linckedin" href="https://www.linkedin.com/in/ahmed-marzaq-519221155/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a id="github" href="https://github.com/AhmMZQ">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+
+        <span id="experienceTarget">
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Alternant Concepteur/Développeur Full Stack</h3>
+                <div class="subheading mb-3">AG2R LA MONDIALE DSI, PARIS BERCY FRANCE </div>
+                <ul>
+                  <li>C# .Net/ JS/ TS/ Angular/ SharePoint Online/ Azure/ SPFX/ Active Directory/ Git/ JIRA/ Agile </li>
+                  <li> Développement des Add-In-SharePoint Online</li>
+                  <li> Développement des WebParts en SharePoint Framework</li>
+                  <li> Développement & déploiement des WebJobs sur Azure </li>
+                  <li> Développement d'une Web API (generate and refresh token Oauth 2) pour l'accessibilité des différentes ressources du groupe </li>
+                  <li> Développement d'un module d'authentification pour une application Mobile (IONIC) </li>
+                  <li> Traitement des incidents </li>
+                  <li> Formation utilisateurs </li>
+                  <li> Documentation du code </li>
+              </ul>
+                 </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">Depuis Septembre 2018</span>
+              </div>
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Stage Concepteur/Développeur C# .Net/ SharePoint Online</h3>
+                <div class="subheading mb-3">Ekilog, Gif-Sur-Yvette FRANCE</div>
+                <ul>
+                  <li>C# .Net/ JS/ SharePoint (Online, Server, Fondation)/ Git </li>
+                  <li> Analyse fonctionnelle / Maquettes</li>
+                  <li> Conception technique de la solution</li>
+                  <li> Paramétrage et développement des WebParts SharePoint </li>
+                  <li> Développement des scripts PowerShell pour la manipulation des sites SharePoint</li>
+                  <li> Ajout des contrôles ASP.Net à des pages d'application </li>
+                  <li> Testes et recette client </li>
+                  <li> Formation utilisateurs </li>
+              </ul>    
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">Avril - Août 2018</span>
+              </div>
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Alternant Concepteur/Développeur C# .Net 4.5</h3>
+                <div class="subheading mb-3">Kingdom Solutions, Rabat MAROC</div>
+                <ul>
+                  <li>C# .Net/ SQL SERVER 2012 </li>
+                  <li> Etude et analyse des besoins</li>
+                  <li> Rédation de cahier des charges</li>
+                  <li> Conception et réalisation de BD sous SQL Server 2012 </li>
+                  <li> Réalisation des IHM</li>
+                  <li> Développement de la totalité des fonctionnalitées de l'application </li>
+                  <li> Testes de l'application en locale </li>
+                  <li> Déploiement de la BD dans un serveur </li>
+                  <li> Recette client </li>
+              </ul>                </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">Septembre 2016 - Juillet 2017</span>
+              </div>
+            </div>
+
+        </span>
+
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Formations</h2>
+
+          <span id="educationTarget">
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Université Paris 8</h3>
+                <div class="subheading mb-3">Master 2 Infomatique THYP</div>
+                <div>Master 2 Infomatique en contrat professionnalisation</div>
+                <p></p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">2019 - 2020</span>
+              </div>
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Université Paris 8</h3>
+                <div class="subheading mb-3">Master 1 Informatique</div>
+                <div>Master 1 Infomatique en contrat professionnalisation</div>
+
+                <p></p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">2018 - 2019</span>
+              </div>
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Université Paris 8</h3>
+                <div class="subheading mb-3">Licence 3 MIME</div>
+                <div>Licence 3 Informatique et machines embarquées</div>
+
+                <p></p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">2017 - 2018</span>
+              </div>
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">ISTA RABAT-MAROC</h3>
+                <div class="subheading mb-3">BTS en TDI</div>
+                <div>BTS en techniques de développement informatique</div>
+
+                <p></p>
+              </div>
+              <div class="resume-date text-md-right">
+                <span class="text-primary">2015 - 2017</span>
+              </div>
+            </div>
+            
+        </span>
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Compétences</h2>
+
+          <div class="subheading mb-3" style="text-decoration: underline;">Langages de Programmation/Outils</div>
+<!--
+  C#.Net, SPFX , SharePoint Online, Azure, CAML Query ,Java /Kotlin, SQL Server 2012, MVC,
+   MySQL, HTML5, CSS3, JS, TS,
+SQL, XML, XSD, UML, Merise, XAMP, IIS, Android Studio, Visual Studio.
+-->
+
+          <span id="competanceTarget">
+              <ul class="list-inline list-icons">
+                  <li class="list-inline-item">
+                     - C#.Net
+                  </li></br>
+                  <li class="list-inline-item">
+                    - SPFX (SharePoint Framework)
+                  </li></br>
+                  <li class="list-inline-item">
+                    - SharePoint Online
+                  </li></br>
+                  <li class="list-inline-item">
+                    - Azure Cloud, Azure WebJob
+                  </li></br>
+                  <li class="list-inline-item">
+                    - CAML Query
+                  </li></br>
+                  <li class="list-inline-item">
+                    - Kotlin/JAVA Android
+                  </li></br>
+                  <li class="list-inline-item">
+                    - SQL Server 2012
+                  </li></br>
+                  <li class="list-inline-item">
+                    - MySQL
+                  </li></br>
+                  <li class="list-inline-item">
+                    - HTML5, CSS3, JS, TS
+                  </li></br>
+                  <li class="list-inline-item">
+                    - Android Studio, Visual Studio, U2C, SharePoint Designer
+                  </li>
+               
+                </ul>
+          </span>
+
+          <br>
+
+          <!-- <div class="subheading mb-3" id="messageHover"></div> -->
+
+        </div>
+      </section>
+
+      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5"></h2>
+          <span>
+            <p id="InterestsTarget">
+                   </p>
+          </span>
+          </div>
+      </section> -->
+
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+    <!-- My app core -->
+    <script src="js/core.js"></script>
+
+  </body>
+
+</html>
